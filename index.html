@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bike Sales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #555;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    .bike-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .bike {
+      background: white;
+      padding: 15px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .bike img {
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Speedy Bikes</h1>
+  <p>Your one-stop shop for all kinds of bicycles</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#bikes">Bikes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="bikes">
+  <h2>Featured Bikes</h2>
+  <div class="bike-list">
+    <div class="bike">
+      <img src="https://via.placeholder.com/250x150?text=Mountain+Bike" alt="Mountain Bike">
+      <h3>Mountain Bike</h3>
+      <p>Price: $799</p>
+      <p>Durable, lightweight and great for rough terrains.</p>
+    </div>
+    <div class="bike">
+      <img src="https://via.placeholder.com/250x150?text=Road+Bike" alt="Road Bike">
+      <h3>Road Bike</h3>
+      <p>Price: $999</p>
+      <p>Perfect for long-distance and speed enthusiasts.</p>
+    </div>
+    <div class="bike">
+      <img src="https://via.placeholder.com/250x150?text=Electric+Bike" alt="Electric Bike">
+      <h3>Electric Bike</h3>
+      <p>Price: $1,499</p>
+      <p>Assisted pedaling with rechargeable battery.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Your name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Your email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="Your message..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Speedy Bikes. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
